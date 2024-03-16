@@ -9,16 +9,16 @@ const List = ({ todos }) => {
     setSearch(e.target.value);
   };
 
-  const getFillterdData = () => {
+  const getFilterdData = () => {
     if (search === "") {
       return todos;
     }
-    return todos.filter((todo) => {
-      todo.content.toLowerCase().includes(search.toLowerCase());
-    });
+    return todos.filter((todo) =>
+      todo.content.toLowerCase().includes(search.toLowerCase())
+    );
   };
 
-  const filteredTodos = getFillterdData();
+  const filteredTodos = getFilterdData();
 
   return (
     <div className="List">
