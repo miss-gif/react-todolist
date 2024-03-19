@@ -35,7 +35,7 @@ function reducer(state, action) {
         item.id === action.targetId ? { ...item, isDone: !item.isDone } : item
       );
     case "DELETE":
-      return state.filter((item) => item.id !== action.targetIds);
+      return state.filter((item) => item.id !== action.targetId);
 
     default:
       state;
