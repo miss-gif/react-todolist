@@ -1,4 +1,4 @@
-import TodoItem from "./Todoitem";
+import TodoItem from "./TodoItem";
 import "./List.css";
 import { useMemo, useState, useContext } from "react";
 import { TodoStateContext } from "../App";
